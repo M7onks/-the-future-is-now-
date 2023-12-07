@@ -1,0 +1,34 @@
+/* select all elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+/* adresses the body of the HTML
+   changed font
+*/
+body {
+    font-family: Rob, sans-serif;
+    font-weight: 300;
+    color: #3a3a3a;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: Rob, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
+}
+
+/* Main background */
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('assets/images/neural-networks.jpg') no-repeat center center;
+}
+
