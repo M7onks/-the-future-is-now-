@@ -24,11 +24,20 @@ h1, h2 {
     color: #252525;
 }
 
-/* Main background */
+/* styling the header pt. 01 */
+
+#logo {
+    float: left;
+    font-size: 280%;
+}
+
+
+
+/* Main background image */
 
 #hero-image {
     height: 600px;
     width: 100%;
-    background: url('assets/images/neural-networks.jpg') no-repeat center center;
+    background: url('../images/neural-networks.jpg') no-repeat center center;
 }
 
