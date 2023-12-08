@@ -36,18 +36,17 @@ h1, h2 {
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
+    float:right;
 }
 
-/* logo format */
+/* menu format */
 
-#menu, #logo {
-    line-height: 75;
-}
+
 
 /* menu format 2 */
 
 #menu li {
-    float: right;
+    
     list-style-type: none;
     margin-right: 30px;
 }
@@ -70,12 +69,19 @@ h1, h2 {
 }
 
 
-/* Main background image */
+
 
 #hero-image {
-   /* padding-top: 15px;*/
-    height: 600px;
+
+    height: 300px;
     width: 100%;
     background: url('../images/neural-networks.jpg') no-repeat center center;
 }
 
+
+
+footer {
+
+
+    height: 150px;
+}
