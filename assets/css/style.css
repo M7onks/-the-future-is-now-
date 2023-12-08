@@ -28,7 +28,7 @@ h1, h2 {
 
 #logo {
     float: left;
-    font-size: 280%;
+    font-size: 140%;
 }
 
 /* Menu format */
@@ -37,6 +37,7 @@ h1, h2 {
     font-size: 110%;
     letter-spacing: 4px;
     float:right;
+    text-align: right;
 }
 
 /* menu format */
@@ -72,7 +73,7 @@ h1, h2 {
 
 
 #hero-image {
-
+    padding-top: 50px;
     height: 300px;
     width: 100%;
     background: url('../images/neural-networks.jpg') no-repeat center center;
