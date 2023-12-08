@@ -31,11 +31,49 @@ h1, h2 {
     font-size: 280%;
 }
 
+/* Menu format */
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+/* logo format */
+
+#menu, #logo {
+    line-height: 75;
+}
+
+/* menu format 2 */
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+/* menu styling continued */
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* menu behaviour */
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
 
 
 /* Main background image */
 
 #hero-image {
+   /* padding-top: 15px;*/
     height: 600px;
     width: 100%;
     background: url('../images/neural-networks.jpg') no-repeat center center;
