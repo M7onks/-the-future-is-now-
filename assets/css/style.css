@@ -38,18 +38,41 @@ h1, h2 {
     letter-spacing: 4px;
     float:right;
     text-align: right;
+
 }
 
 /* menu format */
 
 
+#menu {
+
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+
+
+
+
+
+ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 10px; 
+    align-items: center;
+  }
 
 /* menu format 2 */
 
 #menu li {
-    
+    display: inline-block;
     list-style-type: none;
     margin-right: 30px;
+    
 }
 
 /* menu styling continued */
@@ -73,16 +96,29 @@ h1, h2 {
 
 
 #hero-image {
-    padding-top: 50px;
+    padding-top: 500px;
     height: 300px;
     width: 100%;
     background: url('../images/neural-networks.jpg') no-repeat center center;
+   
 }
 
 
 
-footer {
+#cover-text {
+text-align: center;
+
+}
 
 
-    height: 150px;
+#footer {
+    
+    align-content: center;
+    height: 450px;
+    position:fixed;
+}
+
+
+#iframe{
+    justify-content: center;
 }
