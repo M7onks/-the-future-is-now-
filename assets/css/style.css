@@ -104,6 +104,11 @@ ul {
 }
 
 
+p{
+    background-color: aqua;
+    text-align: center;
+}
+
 
 #cover-text {
 text-align: center;
