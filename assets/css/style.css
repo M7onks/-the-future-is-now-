@@ -115,11 +115,11 @@ text-align: center;
 }
 
 
-#footer {
+#footer-social{
     
     align-content: center;
-    height: 450px;
-    position:fixed;
+    height: 22px;
+    /*position:fixed;*/
 }
 
 
@@ -134,3 +134,5 @@ text-align: center;
     margin-right: auto;
     width: 50%;
   }
+
+  h4 {text-align: center;}
