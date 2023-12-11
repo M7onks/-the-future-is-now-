@@ -25,10 +25,16 @@ And finally, I also sometimes referred to a book called "HTML & CSS for dumies".
 Things I think I did well
 
 
-Possible improvements
+
+
+Possible improvements / mistakes
 I think the most obvious improvement would be to make the site ressponsive.
 If I had more time, I would also include articles with the possibillity to comment on said articles.
 
 
 
 Testing
+
+
+
+Future ideas
