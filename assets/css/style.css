@@ -1,47 +1,175 @@
 /* select all elements */
 
 * {
-    margin: 0;
-    padding: 0;
-    border: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
-
+/*
 header{
+padding: 0 lrem;
+position: fixed;
+z-index: 99;
+/*width: 100%;*/
 
-height: 10px;
 
 
-}
-
-
-/* adresses the body of the HTML
-   changed font
-*/
 body {
-    font-family: Rob, sans-serif;
-    font-weight: 300;
-    color: #3a3a3a;
+  font-family: Rob, sans-serif;
+  font-weight: 300;
+  color: #3a3a3a;
 }
 
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00BAF0;
+  background: linear-gradient(to left, #adaaa6, #636260);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
   }
-
-
-
-
-
-
-
   .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
 
 
-    align: right;
+
+.menu {
+
+
+  align: right;
 
 
 }
@@ -55,7 +183,7 @@ body {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /*@media only screen and (max-width: 600px) {
 
-  
+
 
 }
 
@@ -81,27 +209,27 @@ body {
 
 /* Headings */
 h1, h2 {
-    font-family: Rob, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #252525;
+  font-family: Rob, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #252525;
 }
 
 /* styling the header pt. 01 */
 
 #logo {
-    float: left;
-    font-size: 140%;
-    top: 0;
+  float: left;
+  font-size: 140%;
+  top: 0;
 }
 
 /* Menu format */
 
 #menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    float: right;
-    text-align: right;
+  font-size: 110%;
+  letter-spacing: 4px;
+  float: right;
+  text-align: right;
 
 }
 
@@ -110,75 +238,73 @@ h1, h2 {
 
 #menu {
 
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 
 #menu, #logo {
 
-    line-height: 75px;
+  line-height: 75px;
 
 }
 
-
-
-
-
 ul {
-    list-style: none;
-  }
+  list-style: none;
+}
 
-  li {
-    display: inline-block;
-    margin-right: 10px; 
-    align-items: center;
-  }
+li {
+  display: inline-block;
+  margin-right: 10px; 
+  align-items: center;
+}
 
 /* menu format 2 */
 
 #menu li {
-    display: inline-block;
-    list-style-type: none;
-    margin-right: 30px;
-    
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 30px;
+  
 }
 
 /* menu styling continued */
 
 #menu a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* menu behaviour */
 
 #menu a:hover {
-    border-bottom: 1px solid #00ffc8;
+  border-bottom: 1px solid #0a312965;
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
 }
-*/
 
 
 
 
+/*------------------------------------------------------*/
 
 
-#hero-image {
-    padding-top: 500px;
-    height: 300px;
-    width: 100%;
-    background: url('../images/neural-networks.jpg') no-repeat center center;
-   
-}
+
+
+/*#hero-image {
+  padding-top: 500px;
+  height: 300px;
+  width: 100%;
+  background: url('../images/neural-networks.jpg') no-repeat center center;
+ 
+}*/
 
 
 p{
-    text-align: center;
+  text-align: center;
 }
 
 
@@ -189,53 +315,91 @@ text-align: center;
 
 
 html, body {
-    height: 100%;
-    margin: 0;
-  }
-
-
-  .wrapper {
-    min-height: 100%;
-  
-    /* Equal to height of footer */
-    /* But also accounting for potential margin-bottom of last child */
-    margin-bottom: -50px;
-  }
-
-
-  .footer {
-    text-align: center;
+  height: 100%;
+  margin: 0;
 }
 
- 
 
- /* Youtube styling  */
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+
+
+.footer {
+  text-align: center;
+}
+
+
+
+/* Youtube styling  */
 
 
 .videos {
-  width: 560px; /* you have to have a size or this method doesn't work */
-  height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
-
-  position: absolute; /* positions out of the flow, but according to the nearest parent */
-  top: 0; right: 0; /* confuse it i guess */
-  bottom: 0; left: 0;
-  margin: auto; /* make em equal */
+width: 560px; /* you have to have a size or this method doesn't work */
+height: fit-content; /* think about making these max-width instead - might give you some more responsiveness */
+position: relative; /* positions out of the flow, but according to the nearest parent */
+top: 0; right: 0; /* confuse it i guess */
+ left: 0;
+ margin: auto;
+ padding: 10%;
 }
 
 
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-  h4 {text-align: center;}
-
-
-.footer.style{ 0 auto;
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 50%;
 }
+
+h4 {text-align: center;}
+
+
+
+
+
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+/*
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            
+} */
+
+footer {
+  position: sticky;
+  bottom: 0;
+  padding-top 10%;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+
 
