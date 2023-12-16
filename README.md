@@ -12,7 +12,9 @@ Potential user's expectations and perspective (User Story)
 
 
 Known bugs
-
+git commit was defintelly used as often as I intended, simply because I am not used to this sort of creating very usable bookmark points to resort to.
+While testing some external code, my default font was changed from Roboto to Times New Roman, which looks terrible.
+I went back 1 commit (before the code was added), but there was no changee.
 
 
 Technology used
@@ -22,7 +24,7 @@ HTML and CSS
 Ressources
 I obviously heavily relied on some of the code of the Code Institut's "Love Running" project.
 Also I would like thank my Mentor Sheryl and the Tutor Support team for their patience and for providing excellent help.
-Also, I found a website called w3school (https://www.w3schools.com/), which was able to answer a very important question.
+Also, I found a websites (https://www.w3schools.com/ and https://alvarotrigo.com/), which was able to answer very important questions.
 And finally, I also sometimes referred to a book called "HTML & CSS for dumies".
 
 
@@ -40,3 +42,4 @@ Functionality
 Each page contains 4 links to the 4 sections of the website (collapses to dropdown on smaller devices). These links are located in the head, on the the left.
 Also, if you click on the "The future is now" text, you will return to the homepage.
 On the bottom you will find 4 dummy social media links.
+The contact page contains input fields and a submit button
